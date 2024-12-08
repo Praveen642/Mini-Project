@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="theme.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="hero">
+        <nav>
+        <h1 class="logo">Epic <span>Store</span></h1>
+            <ul>
+                <li><a href="home.html"><b>Home</b></a></li>
+		        <li><a href="products.html"><b>Products</b></a></li>
+		        <li><a href="about.html"><b>About</b></a></li>
+		        <li><a href="login.html"><b>Login</b></a></li>
+            </ul>
+        </nav>
+    </div>
+        <br>
+    <!-- Image slider -->
+        <div class="container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="image/scroll 1.jpeg" class="pic"></div>
+                  <div class="swiper-slide"><img src="image/scroll 2.jpeg" class="pic"></div>
+                  <div class="swiper-slide"><img src="image/scroll 3.jpg" class="pic"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    <!-- Products -->
+    <div class="products">
+        <div class="box">
+            <h3>GeForce RTX 4090</h3>
+            <a href="rtx 4090.html"><button><b>See details >></b></button></a>
+        </div>
+        <div class="box">
+            <h3>GeForce RTX 4080</h3>
+            <a href="rtx 4080.html"><button><b>See details >></b></button></a>
+        </div>
+        <div class="box">
+            <h3>GeForce RTX 4070 Ti</h3>
+            <a href="rtx 4070ti.html"><button><b>See details >></b></button></a>
+        </div>
+    </div>
+    <div class="products">
+        <div class="box">
+            <h3>GeForce RTX 4070</h3>
+            <a href="rtx 4070.html"><button><b>See details >></b></button></a>
+        </div>
+        <div class="box">
+            <h3>GeForce RTX 3080 Ti</h3>
+            <a href="rtx 3080 ti.html"><button><b>See details >></b></button></a>
+        </div>
+        <div class="box">
+            <h3>GeForce GTX 1650</h3>
+            <a href="gtx 1650.html"><button><b>See details >></b></button></a>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://www.facebook.com/NVIDIA/"><i id="icon" class="fa-brands fa-facebook" style="color: #0008ff;"></i></a>
+        <a href="https://www.instagram.com/nvidia/"><i id="icon" class="fa-brands fa-instagram" style="color: #ff00ea;"></i></a>
+        <a href="https://x.com/nvidia/with_replies"><i id="icon" class="fa-brands fa-x-twitter" style="color: #18428b;"></i></a>
+        <a href="https://www.youtube.com/@NVIDIA"><i id="icon" class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+    </div>
+</body>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay: {
+    delay: 3000,
+    disableOnIneraction: false,
+    },
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    });
+</script>
+</html>
